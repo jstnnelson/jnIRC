@@ -14,15 +14,15 @@
 #include <gtkmm/textview.h>
 #include <gtkmm/window.h>
 #include <gtkmm.h>
+#include <iostream>
 
-class MainWindow : public Gtk::ApplicationWindow
-{
+class MainWindow : public Gtk::ApplicationWindow {
 public:
 	MainWindow();
 	virtual ~MainWindow();
 
-private:
-	//Member widgets:
+protected:
+
 	Gtk::Entry msg_entry_box;
 	Gtk::Paned main_pane, chat_pane;
 	Gtk::TextView chat_text, user_list;

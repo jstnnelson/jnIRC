@@ -21,8 +21,8 @@ MainWindow::MainWindow() : a("Justin"), chat_pane(Gtk::ORIENTATION_VERTICAL){
 	chat_text.set_editable(false);
 	chat_pane.pack2(msg_entry_box, false, true);
 	Glib::RefPtr<Gtk::TextBuffer> p_buffer = chat_text.get_buffer();
-	p_buffer = chat_text.get_buffer();
-	p_buffer->set_text("Lorem Ipsum");
+	//p_buffer = chat_text.get_buffer();
+	//p_buffer->set_text("Lorem Ipsum");
 
 	show_all_children(true);
 }
@@ -30,5 +30,4 @@ MainWindow::MainWindow() : a("Justin"), chat_pane(Gtk::ORIENTATION_VERTICAL){
 MainWindow::~MainWindow(){
 
 }
-
 
